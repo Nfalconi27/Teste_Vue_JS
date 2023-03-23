@@ -10,7 +10,13 @@
 </head>
 <body>
     <div id="app">
+        <form id="app-form">
+            <input type="text" v-model="input_name" placeholder="Digite seu nome"> <!--campo de input--> 
+            <input type="submit" value="Enviar" v-on:click="submitForm"> <!--botão de enviar--> 
+            
+        </form>
     <p>O meu nome é: {{ name }} e tenho {{ age }}</p>
+    <p>Data Binding: {{ input_name }}</p> <!--o texto é preenchido em real time--> 
     </div>
 </body>
 </html>
